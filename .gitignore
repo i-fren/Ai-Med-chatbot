@@ -1,5 +1,21 @@
-.venv/
-data/
-__pycache__/
+# Environment and secrets - NEVER upload
 .env
-.env.*
+.venv/
+venv/
+
+# AI / Database files - too big
+vectorstore/
+db_faiss/
+*.faiss
+*.pkl
+
+# Python junk
+__pycache__/
+*.pyc
+*.pyo
+
+# Video and OS
+mybot.webm
+.DS_Storegit rm --cached -r vectorstore/
+data/
+OneDrive/
